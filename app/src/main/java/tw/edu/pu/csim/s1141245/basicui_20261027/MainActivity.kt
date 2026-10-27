@@ -125,7 +125,7 @@ fun RowExample(modifier: Modifier = Modifier) {
             painter = painterResource(id = R.drawable.android),
             contentDescription = "Android icon",
             modifier = Modifier
-                .size(100.dp)
+                .size(40.dp)
                 .clip(CircleShape)
                 .background(Color.Yellow),
             alpha = 0.6f,
@@ -136,7 +136,31 @@ fun RowExample(modifier: Modifier = Modifier) {
         Image(
             painter = painterResource(id = R.drawable.compose),
             contentDescription = "Compose icon",
-            modifier = Modifier.size(100.dp)
+            modifier = Modifier.size(40.dp)
+        )
+
+        Spacer(modifier = Modifier.width(20.dp))
+
+        Image(
+            painter = painterResource(id = R.drawable.animal0),
+            contentDescription = "Duck icon",
+            modifier = Modifier.size(40.dp)
+        )
+
+        Spacer(modifier = Modifier.width(20.dp))
+
+        Image(
+            painter = painterResource(id = R.drawable.animal2),
+            contentDescription = "Frog icon",
+            modifier = Modifier.size(40.dp)
+        )
+
+        Spacer(modifier = Modifier.width(20.dp))
+
+        Image(
+            painter = painterResource(id = R.drawable.animal4),
+            contentDescription = "Whale icon",
+            modifier = Modifier.size(40.dp)
         )
     }
 }
